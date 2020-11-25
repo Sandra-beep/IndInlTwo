@@ -1,0 +1,33 @@
+body {
+    color: rgb(155, 155, 155);
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(48, 48, 48);
+}
+  
+h4 {
+    font-size: 500;
+    color: rgb(196, 196, 196);
+}
+
+ul, li{
+    font-size: 300;
+    list-style: none;
+}
+
+span {
+    font-size: 13px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.lasttyped, 
+form, 
+.overview, 
+.InkomstLista, 
+.KostnadLista {
+    border: darkgrey solid 2px;
+    border-radius: 5px;
+    padding: 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "IndInlTwo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss style.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sandra-beep/Veckouppgift3-Responsive.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sandra-beep/Veckouppgift3-Responsive/issues"
+  },
+  "homepage": "https://github.com/Sandra-beep/Veckouppgift3-Responsive#readme",
+  "devDependencies": {},
+  "description": ""
+}
