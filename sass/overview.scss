@@ -1,0 +1,28 @@
+form {
+    border-radius: 55px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.overview {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.inkomst, .kostnad, .vinst {
+    width: 20vw;
+    min-height: 7vw;
+}
+
+.InkomstLista, .KostnadLista {
+    min-height: 40vw;
+    width: 20vw;
+}
+
+
+.lasttyped {
+    width: 20vw;
+}

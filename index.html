@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Sandras Monthly Budget</title>
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+ <script src="main.js" defer></script>
+</head>
+
+
+<body>
+
+    <header>
+        
+        <article class = "title">
+            <h1>My Monthly Budget.</h1>
+
+            <span>Hello and welcome to <b>My Monthly Budget!</b></span>
+            
+            <span>Here you can quickly type in your incomes and costs to have an overview of your budget, and how much you can save for next month!</span>
+            <span>Let's start by chosing <b>(+)</b> for income or <b>(-)</b> for cost, then write type of income/cost and then write in how much. Press "Add new value" or ENTER to add to your budget! </span>
+            <span><b>Voilá!</b></span>
+        </article>
+
+    </header>
+
+    <form>
+
+        <select name="" id="selectOption">
+            <option value="+"> + </option>
+            <option value="-"> - </option>
+        </select>
+
+        <input type="text" id="description">
+        <input type="number" id="value">
+
+        <button class="add">
+            <h5>Add new value</h5>
+            <!-- inner text -->
+        </button>
+ 
+    </form>
+
+    <!-- Here is the overviews of the clients incomes and costs  -->
+
+    <section class ="overview">
+
+        <div class = "InkomstLista" >
+    
+            <h4> Overview of incomes</h4>
+    
+            <ul class="listIncomes"></ul>
+    
+        </div>
+    
+        <div class = "KostnadLista" >
+    
+            <h4>Overview of costs</h4>
+    
+            <ul class="listCosts"> </ul>
+        
+        </div>
+    
+        <section class="lasttyped">
+            <div class = "inkomst">
+                <h4>Last typed income</h4>
+                <span class="inkomstData">
+                <!-- inner text -->
+                </span>
+            </div>
+        
+        
+            <div class = "kostnad">
+                <h4>Last typed cost</h4>
+                <span class = "kostnadData">
+                <!-- inner text -->
+                </span>
+            </div>
+        
+            <div class = "vinst">
+                <h4>Left for next month</h4>
+                <span class = "vinstData">
+                <!-- inner text -->
+                </span>
+            </div>
+        
+            </section>
+        </section>
+
+
+
+    <footer>
+        <span>&copy; Sandra Rivas 2020. Individuell inlämning 2. Kurs - Frontend-utveckling. Medieinstitutet.</span>
+    </footer>
+
+</body>
+ 
+</html>
