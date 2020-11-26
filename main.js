@@ -37,7 +37,7 @@ function countTotal(event){
         var li = document.createElement( "li" );
 
         // Denna kod säger att all text som skrivs, dvs från input-fältet från description och value ska skapa en punkt i punktlistan.
-        li.innerText = description + ": +" + value + " kr";
+        li.innerText = description + ": " + value + " kr";
 
         // Skapat en variabel som heter ul, där den plockar fram klassen listIncomes
         var ul = document.querySelector( ".listIncomes" );
@@ -62,7 +62,7 @@ function countTotal(event){
 
         var li = document.createElement( "li" );
 
-        li.innerText = description + ": - " + value + " kr";
+        li.innerText = description + ": " + value + " kr";
 
         var ul = document.querySelector( ".listCosts" );
 
@@ -77,7 +77,7 @@ function countTotal(event){
 
     var vinstSpan = document.querySelector ( ".vinstData" )
 
-    vinstSpan.innerText = summa;
+    vinstSpan.innerText = summa + " kr";
 
 }
 

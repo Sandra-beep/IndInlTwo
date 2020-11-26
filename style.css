@@ -1,97 +1,95 @@
-@charset "UTF-8";
-
 body {
-    color: rgb(150, 155, 155);
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(48, 48, 48);
-}
+  color: #9b9b9b;
+  font-family: 'Roboto', sans-serif;
+  background-color: #303030;
+  padding: 10vw; }
 
-
-header {
-    padding: 50px;
-    width: auto;
-    background-color: rgb(48, 48, 48);
-    background-image:url("piggy-money-bank-5085515_1920.png");
-    background-size: 45vw;
-    background-repeat: no-repeat;
-    background-position: right;
-}
-
-.title {
-    min-width: 25vw;
-    max-width: 35vw;
-    text-align: left;
-    color: rgb(134, 134, 134);
-}
-
-h1 {
-    font-size: 65px;
-    margin-top: 20vw;
-    color: darksalmon;
-    width: 20vw;
-}
-
-h4 {
-    font-size: 500;
-    color: rgb(196, 196, 196);
-}
-
-ul, li{
-    font-size: 300;
-    list-style: none;
-}
+ul, li, .overview {
+  list-style: none; }
 
 span {
-    font-size: 13px;
-    display: block;
-    padding-bottom: 10px;
-}
+  font-size: 17px;
+  display: block;
+  padding-bottom: 10px;
+  color: #7a7a7a; }
 
-
-.lasttyped, 
-form, 
-.overview, 
-.InkomstLista, 
+.lasttyped,
+form,
+.InkomstLista,
 .KostnadLista {
-    border: darkgrey solid 2px;
-    border-radius: 5px;
-    padding: 25px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+  border: #686868 solid 5px;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 10px; }
 
-}
+header {
+  width: auto;
+  background-color: #303030;
+  background-image: url("piggy-money-bank-5085515_1920.png");
+  background-size: 30vw;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 50px; }
+
+.title {
+  min-width: 25vw;
+  max-width: 35vw;
+  text-align: left;
+  color: #868686; }
+
+h1 {
+  font-size: 65px;
+  color: darksalmon;
+  width: 20vw; }
 
 form {
-    border-radius: 55px;
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+  border-radius: 85px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+input {
+  font-size: 18px;
+  color: #333333; }
+
+.add {
+  font-size: 16px; }
+
+/* Chrome/Opera/Safari */
+input::-webkit-input-placeholder {
+  color: #777777; }
+
+/* Firefox 19+ */
+input ::-moz-placeholder {
+  color: #777777; }
+
+/* IE 10+ */
+input:-ms-input-placeholder {
+  color: #777777; }
+
+/* Firefox 18- */
+input:-moz-placeholder {
+  color: #777777; }
 
 .overview {
-    display: flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    text-align: left;
-}
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
 
-.inkomst, .kostnad, .vinst {
-    width: 20vw;
-    min-height: 7vw;
-}
+h3.left {
+  color: lightgrey; }
 
-.InkomstLista, .KostnadLista {
-    min-height: 40vw;
-    width: 20vw;
-}
-
-
-.lasttyped {
-    width: 20vw;
-}
+.InkomstLista, .KostnadLista, .lasttyped {
+  text-align: center;
+  min-height: 20vw;
+  min-width: 15vw; }
 
 footer {
-    color: rgb(163, 163, 163);
-    margin-top: 7vw;
-    text-align: center;
-}
+  color: #a3a3a3;
+  text-align: center; }
+
+hr {
+  margin-top: 100px; }
+
+.footer-text {
+  font-size: 1.5vw; }

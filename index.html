@@ -19,6 +19,7 @@
 
     <header>
         
+
         <article class = "title">
             <h1>My Monthly Budget.</h1>
 
@@ -29,6 +30,7 @@
             <span><b>Voilá!</b></span>
         </article>
 
+
     </header>
 
     <form>
@@ -38,11 +40,12 @@
             <option value="-"> - </option>
         </select>
 
-        <input type="text" id="description">
-        <input type="number" id="value">
+        <input type="text" id="description" placeholder="Write description here">
+        
+        <input type="number" id="value" placeholder="Write value here">
 
         <button class="add">
-            <h5>Add new value</h5>
+            <h4>Add</h4>
             <!-- inner text -->
         </button>
  
@@ -54,7 +57,7 @@
 
         <div class = "InkomstLista" >
     
-            <h4> Overview of incomes</h4>
+            <h2>Overview incomes</h2>
     
             <ul class="listIncomes"></ul>
     
@@ -62,7 +65,7 @@
     
         <div class = "KostnadLista" >
     
-            <h4>Overview of costs</h4>
+            <h2>Overview costs</h2>
     
             <ul class="listCosts"> </ul>
         
@@ -70,7 +73,7 @@
     
         <section class="lasttyped">
             <div class = "inkomst">
-                <h4>Last typed income</h4>
+                <h3>Last typed income</h3>
                 <span class="inkomstData">
                 <!-- inner text -->
                 </span>
@@ -78,14 +81,14 @@
         
         
             <div class = "kostnad">
-                <h4>Last typed cost</h4>
+                <h3>Last typed cost</h3>
                 <span class = "kostnadData">
                 <!-- inner text -->
                 </span>
             </div>
         
             <div class = "vinst">
-                <h4>Left for next month</h4>
+                <h3 class = "left">Left for next month</h3>
                 <span class = "vinstData">
                 <!-- inner text -->
                 </span>
@@ -94,10 +97,10 @@
             </section>
         </section>
 
-
+<hr>
 
     <footer>
-        <span>&copy; Sandra Rivas 2020. Individuell inlämning 2. Kurs - Frontend-utveckling. Medieinstitutet.</span>
+        <p class ="footer-text">&copy; Sandra Rivas 2020. Individuell inlämning 2. Kurs - Frontend-utveckling. Medieinstitutet.</p>
     </footer>
 
 </body>

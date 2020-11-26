@@ -1,28 +1,53 @@
+// Själva inputfälten 
+
 form {
-    border-radius: 55px;
+    border-radius: 85px;
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+input {
+    font-size: 18px;
+    color: rgb(51, 51, 51);
+}
+
+.add {
+    font-size: 16px;
+}
+
+
+
+// Placerholder
+
+/* Chrome/Opera/Safari */
+input::-webkit-input-placeholder,
+
+/* Firefox 19+ */
+input ::-moz-placeholder,  
+
+/* Firefox 18- */
+input:-moz-placeholder,
+
+/* IE 10+ */
+input:-ms-input-placeholder { 
+    color: rgb(192, 192, 192);
+  }
+
 .overview {
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
-    text-align: left;
 }
 
-.inkomst, .kostnad, .vinst {
-    width: 20vw;
-    min-height: 7vw;
+// Färgen på rubriken "Left for next month"
+
+h3.left {
+    color:lightgrey;
 }
 
-.InkomstLista, .KostnadLista {
-    min-height: 40vw;
-    width: 20vw;
-}
-
-
-.lasttyped {
-    width: 20vw;
+.InkomstLista, .KostnadLista, .lasttyped {
+    text-align: center;
+    min-height: 20vw;
+    min-width: 15vw;
 }
