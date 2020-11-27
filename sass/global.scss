@@ -5,18 +5,22 @@ body {
     padding: 10vw;
 }
 
-ul, li, .overview{
+ul {
         list-style: none;
+        list-style-type: outside;
+        margin: 0;
+        padding: 0;
 }
 
+b {color: rgb(153, 119, 119);}
+
 span {
-    font-size: 17px;
+    font-size: 2vw;
     display: block;
     padding-bottom: 10px;
     color: rgb(122, 122, 122);
 }
 
-form, 
 .InkomstLista, 
 .KostnadLista,
 .lasttyped {
@@ -26,3 +30,57 @@ form,
     margin: 10px;
 }
 
+@media screen and (max-width: 920px) {
+    header {
+        flex-flow: column-reverse wrap;
+        width: auto;
+    }
+
+
+    .title {
+        width: auto;
+    }
+
+
+    form{
+        flex-direction:column;
+    }
+
+    #selectOption {
+        margin-left:0.625rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+
+    h1 {
+        font-size:16px;
+    }
+
+    form {
+        justify-content: center;
+        align-content: center;
+        flex-direction:column;
+    }
+
+
+    #selectOption {
+        margin-left:0.625rem;
+    }
+
+    
+    #selectOption, .add{
+        width: 10rem;
+    }
+
+    h4 {
+        font-size:16px;
+    }
+    
+    #description,
+    #value{
+        font-size:12px;
+        width:9.5rem;
+    }
+}

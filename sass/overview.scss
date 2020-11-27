@@ -1,37 +1,56 @@
 // Själva inputfälten 
 
 form {
+    border: rgb(156, 107, 107) solid 5px;
     border-radius: 85px;
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 30px;
+    margin: 20px;
+    width: auto;
+    overflow: auto;
 }
 
 input {
-    font-size: 18px;
+    font-size: 25px;
     color: rgb(51, 51, 51);
+    text-align: center;
+    margin-left: 10px;
+    width: auto;
 }
 
 .add {
-    font-size: 16px;
+    font-size: 20px;
+    margin-left:10px;
+    padding-left:25px;
+    padding-right: 25px;
 }
-
 
 
 // Placerholder
 
 /* Chrome/Opera/Safari */
-input::-webkit-input-placeholder,
+input::-webkit-input-placeholder
+{ 
+    color: rgb(199, 199, 199);
+  }
 
 /* Firefox 19+ */
-input ::-moz-placeholder,  
+input ::-moz-placeholder
+{ 
+    color: rgb(199, 199, 199);
+  } 
 
 /* Firefox 18- */
-input:-moz-placeholder,
+input:-moz-placeholder
+{ 
+    color: rgb(199, 199, 199);
+  }
 
 /* IE 10+ */
 input:-ms-input-placeholder { 
-    color: rgb(192, 192, 192);
+    color: rgb(199, 199, 199);
   }
 
 .overview {
@@ -49,5 +68,6 @@ h3.left {
 .InkomstLista, .KostnadLista, .lasttyped {
     text-align: center;
     min-height: 20vw;
-    min-width: 15vw;
+    max-width: 30vw;
 }
+

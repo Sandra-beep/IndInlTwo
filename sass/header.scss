@@ -1,23 +1,28 @@
 header {
-    width: auto;
-    background-color: rgb(48, 48, 48);
-    background-image:url("piggy-money-bank-5085515_1920.png");
-    background-size: 30vw;
-    background-repeat: no-repeat;
-    background-position: right;
-    padding: 50px;
+    min-width: 200px;
+    padding:50px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
 }
 
 .title {
-    min-width: 25vw;
-    max-width: 35vw;
-    text-align: left;
+    max-width: 45vw;
     color: rgb(134, 134, 134);
 }
 
 h1 {
-    font-size: 65px;
+    font-size: 8vw;
     color: darksalmon;
     width: 20vw;
 }
 
+figure {
+    width:37%;
+    height:100%;
+    
+}
+
+.piggy {
+    width:25vw;
+}

@@ -4,72 +4,120 @@ body {
   background-color: #303030;
   padding: 10vw; }
 
-ul, li, .overview {
-  list-style: none; }
+ul {
+  list-style: none;
+  list-style-type: outside;
+  margin: 0;
+  padding: 0; }
+
+b {
+  color: #997777; }
 
 span {
-  font-size: 17px;
+  font-size: 2vw;
   display: block;
   padding-bottom: 10px;
   color: #7a7a7a; }
 
-.lasttyped,
-form,
 .InkomstLista,
-.KostnadLista {
+.KostnadLista,
+.lasttyped {
   border: #686868 solid 5px;
   border-radius: 10px;
   padding: 25px;
   margin: 10px; }
 
+@media screen and (max-width: 920px) {
+  header {
+    flex-flow: column-reverse wrap;
+    width: auto; }
+  .title {
+    width: auto; }
+  form {
+    flex-direction: column; }
+  #selectOption {
+    margin-left: 0.625rem; } }
+
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 16px; }
+  form {
+    justify-content: center;
+    align-content: center;
+    flex-direction: column; }
+  #selectOption {
+    margin-left: 0.625rem; }
+  #selectOption, .add {
+    width: 10rem; }
+  h4 {
+    font-size: 16px; }
+  #description,
+  #value {
+    font-size: 12px;
+    width: 9.5rem; } }
+
 header {
-  width: auto;
-  background-color: #303030;
-  background-image: url("piggy-money-bank-5085515_1920.png");
-  background-size: 30vw;
-  background-repeat: no-repeat;
-  background-position: right;
-  padding: 50px; }
+  min-width: 200px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .title {
-  min-width: 25vw;
-  max-width: 35vw;
-  text-align: left;
+  max-width: 45vw;
   color: #868686; }
 
 h1 {
-  font-size: 65px;
+  font-size: 8vw;
   color: darksalmon;
   width: 20vw; }
 
+figure {
+  width: 37%;
+  height: 100%; }
+
+.piggy {
+  width: 25vw; }
+
 form {
+  border: #9c6b6b solid 5px;
   border-radius: 85px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding: 30px;
+  margin: 20px;
+  width: auto;
+  overflow: auto; }
 
 input {
-  font-size: 18px;
-  color: #333333; }
+  font-size: 25px;
+  color: #333333;
+  text-align: center;
+  margin-left: 10px;
+  width: auto; }
 
 .add {
-  font-size: 16px; }
+  font-size: 20px;
+  margin-left: 10px;
+  padding-left: 25px;
+  padding-right: 25px; }
 
 /* Chrome/Opera/Safari */
 input::-webkit-input-placeholder {
-  color: #777777; }
+  color: #c7c7c7; }
 
 /* Firefox 19+ */
 input ::-moz-placeholder {
-  color: #777777; }
-
-/* IE 10+ */
-input:-ms-input-placeholder {
-  color: #777777; }
+  color: #c7c7c7; }
 
 /* Firefox 18- */
 input:-moz-placeholder {
-  color: #777777; }
+  color: #c7c7c7; }
+
+/* IE 10+ */
+input:-ms-input-placeholder {
+  color: #c7c7c7; }
 
 .overview {
   display: flex;
@@ -82,14 +130,15 @@ h3.left {
 .InkomstLista, .KostnadLista, .lasttyped {
   text-align: center;
   min-height: 20vw;
-  min-width: 15vw; }
+  max-width: 30vw; }
 
 footer {
   color: #a3a3a3;
-  text-align: center; }
+  text-align: center;
+  min-width: 150px; }
 
 hr {
   margin-top: 100px; }
 
 .footer-text {
-  font-size: 1.5vw; }
+  font-size: 1.4vw; }
