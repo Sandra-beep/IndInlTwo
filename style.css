@@ -80,7 +80,7 @@ figure {
   width: 25vw; }
 
 form {
-  border: #9c6b6b solid 5px;
+  border: #cc7d63 solid 5px;
   border-radius: 85px;
   display: flex;
   justify-content: center;
@@ -138,7 +138,7 @@ footer {
   min-width: 150px; }
 
 hr {
-  margin-top: 100px; }
+  margin-top: 40px; }
 
 .footer-text {
   font-size: 1.4vw; }
